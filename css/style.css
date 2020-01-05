@@ -24,3 +24,10 @@ body {
   --vintage3: #4A9D64;
   --vintage4: #D4433A;
 }
+
+.hidden {
+  display: none;
+}
+.show {
+  display: inline-block;
+}

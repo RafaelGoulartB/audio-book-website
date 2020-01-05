@@ -1,0 +1,37 @@
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5em;
+}
+#nav .tabs {
+  display: flex;
+  justify-content: space-between;
+}
+#nav .tabs .tab:first-child a {
+  color: #ffffff;
+  font-weight: bold;
+}
+#nav .tabs .tab a {
+  text-decoration: none;
+  margin-right: 1em;
+  color: #4e4e4e;
+  font-size: var(--heading-01);
+  font-weight: bold;
+}
+
+#nav .buttons {
+  display: flex;
+  align-items: center;
+}
+#nav .buttons form {
+  display: flex;
+  align-items: center;
+  margin-right: 2em;
+}
+#nav .buttons form input {
+  padding-bottom: 5px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+}

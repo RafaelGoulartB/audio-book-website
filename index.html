@@ -26,8 +26,13 @@
       </ul>
       <!-- Nav Buttons -->
       <div class="buttons">
-        <input type="search" text="d" class="search"></input>
-        <div class="user"></div>
+        <form class="search-field" action="#">
+          <input class="hidden" type="text" placeholder="Search" name="search" id="search">
+          <div class="search-button" id="button-search"><img src="./img/search.png" alt="Search button"></div>
+        </form>
+        <a  href="#" class="user">
+          <img src="./img/user-img.png" alt="User's image">
+        </a>
       </div>
     </nav>
   
@@ -84,6 +89,8 @@
   
     <section id="player"></section>
   </div>
+
+  <script src="./js/search.js"></script>
 
 </body>
 
