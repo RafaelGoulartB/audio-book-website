@@ -1,0 +1,43 @@
+#main .content-row .title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+#main .content-row .title-row .title {
+  font-size: var(--heading-04);
+  font-weight: bold;
+}
+#main .content-row .title-row .see-all {
+  color: var(--vintage3);
+  text-decoration: none;  
+}
+#main .content-row .title-row .see-all:hover {
+  text-decoration: underline;
+}
+
+#main .content-row .audios-cards {
+  display: flex;
+  justify-content: space-around;
+}
+#main .content-row .audios-cards .item {
+  color: #fff;
+  text-decoration: none;
+}
+#main .content-row .audios-cards .item .info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 0.5em;
+}
+#main .content-row .audios-cards .item .info .audio-title {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.2em;
+  width: 75%;
+}
+#main .content-row .audios-cards .item .info .time-audio {
+  font-size: var(--body-text-02);
+  color: var(--black74);
+}

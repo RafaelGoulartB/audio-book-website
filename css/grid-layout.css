@@ -2,8 +2,8 @@
   display: grid;
   grid-gap: 1.5em;
   grid-template-columns: 1fr 1fr 348px;
-  margin-left:  4em;
-  margin-right: 4em;
+  margin-left:  3em;
+  margin-right: 3em;
   font-family: 'Public Sans', sans-serif;
 }
 
