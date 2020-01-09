@@ -1,0 +1,45 @@
+#aside {
+  
+}
+#aside .cta {
+  width: 60%;
+  line-height: 1.5em;
+  background-color: rgba(255, 255, 255, .12);
+  padding: 2em 1.5em;
+  border-radius: 24px;
+}
+#aside .cta .cta-title {
+  font-size: var(--heading-04);
+  font-weight: bold;
+  margin-bottom: 2.5em;
+}
+#aside .cta .price {
+  color: var(--black21);
+  font-size: var(--body-text-02);
+}
+#aside .cta .price .price-value {
+  color: #ffffff;
+  font-size: var(--heading-02);
+  font-weight: bold;
+}
+#aside .top-list {
+  margin-top: 4em;
+}
+#aside .top-list .top-list-title {
+  font-size: var(--headin-05);
+  font-weight: bold;
+  margin-bottom: 1.5em;
+}
+#aside .top-list .audio-top-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid rgba(196, 196, 196, .01);
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  color: #ffffff;
+  text-decoration: none;
+}
+#aside .top-list .audio-top-item h2 {
+  margin-left: 1em;
+  font-size: var(--body-text-01);
+}
