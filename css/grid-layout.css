@@ -1,7 +1,7 @@
 #content {
   display: grid;
   grid-gap: 1.5em;
-  grid-template-columns: 1fr 1fr 348px;
+  grid-template-columns: 1fr 1fr 350px;
   margin-left:  3em;
   margin-right: 3em;
   font-family: 'Public Sans', sans-serif;
@@ -22,4 +22,16 @@
 #aside {
   grid-column-start: 3;
   grid-column-end: 3;
+}
+
+@media(max-width: 1280px) {
+  #content {
+    grid-template-columns: 1fr 1fr 220px;
+  }
+}
+@media(max-width: 1366px) {
+  #content {
+    grid-template-columns: 1fr 1fr 290px;
+  }
+  
 }
