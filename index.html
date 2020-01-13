@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/aside.css">
+  <link rel="stylesheet" href="css/player.css">
   <link rel="stylesheet" href="css/reset.css">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap" rel="stylesheet"> 
@@ -173,11 +174,16 @@
           <h2 class="audio-top-title">Self Controll</h2>
         </a>
       </div>
-    </aside>
-  
-    <section id="player"></section>
-  </div>
+    </aside>  
 
+  </div>
+  <section id="audio-player">
+    <audio controls="controls">
+      <source src="audios/track.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+  
   <script src="./js/search.js"></script>
 
 </body>
