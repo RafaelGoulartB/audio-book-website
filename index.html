@@ -178,19 +178,27 @@
 
   </div>
   <section id="audio-player">
-    <h3 class="audio-player-title">The Morning Show</h3>
+    <h3 class="audio-player-title">The Coffee Morning</h3>
 
-    <div class="progress-bar">
-      <div id="fill"></div>
-      <div class="handle"></div>
+    <div class="controllers">
+      <div class="bar-and-time">
+        <div class="progress-bar">
+          <div id="fill"></div>
+          <div class="handle"></div>
+        </div>
+        <div id="current-time-song">
+          <span id="current-time-minutes-song">00</span>
+          <span class="song-time-divider">:</span>
+          <span id="current-time-seconds-song">00</span>
+        </div>
+      </div>
+  
+      <div class="buttons">
+        <button id="pre"  onclick="pre()"><img src="./img/previous-button.png" alt="previous button"></button>
+        <button id="play" onclick="playOrPauseSong()"><img src="./img/play-button.png" alt="play button"></button>
+        <button id="next" onclick="next()"><img src="./img/next-button.png" alt="next button"></button>
+      </div>
     </div>
-
-    <div class="buttons">
-      <button id="pre"  onclick="pre()"><img src="./img/previous-button.png" alt="previous button"></button>
-      <button id="play" onclick="playOrPauseSong()"><img src="./img/play-button.png" alt="play button"></button>
-      <button id="next" onclick="next()"><img src="./img/next-button.png" alt="next button"></button>
-    </div>
-    
     <button id="favorite" onclick="favorite()"><img src="./img/favorite-button.png" alt="Favorite button"></button>
 
   </section>

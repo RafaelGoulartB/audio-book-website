@@ -2,6 +2,8 @@ let songSrc = "../audios/track.mp3"
 
 const songTitle = document.getElementsByClassName('audio-player-title')
 const fillBar = document.getElementById('fill')
+const currentSecondsTime = document.getElementById('current-time-seconds-song')
+const currentMinutesTime = document.getElementById('current-time-minutes-song')
 
 const song = new Audio()
 
@@ -22,8 +24,23 @@ function playOrPauseSong(){
   }
 }
 
-song.addEventListener('timeupdate', function(){ 
-  let position = song.currentTime / song.duration;
-  
-  fillBar.style.width = position * 100 +'%';
-});
+function updateTime() {
+  song.addEventListener('timeupdate', () => {
+    let minutes = 00
+    let seconds = 
+
+    currentMinutesTime.textContent = minutes
+    currentSecondsTime.textContent = song.currentTime.toFixed(0)
+  })
+}
+
+function updateProgressBar() {
+  song.addEventListener('timeupdate', () => { 
+    let position = song.currentTime / song.duration;
+    fillBar.style.width = position * 100 +'%';
+  });
+}
+
+
+updateTime()
+updateProgressBar()
