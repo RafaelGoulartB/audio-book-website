@@ -178,13 +178,26 @@
 
   </div>
   <section id="audio-player">
-    <audio controls="controls">
-      <source src="audios/track.mp3" type="audio/mpeg" />
-      Your browser does not support the audio element.
-    </audio>
+    <h3 class="audio-player-title">The Morning Show</h3>
+
+    <div class="progress-bar">
+      <div id="fill"></div>
+      <div class="handle"></div>
+    </div>
+
+    <div class="buttons">
+      <button id="pre"  onclick="pre()"><img src="./img/previous-button.png" alt="previous button"></button>
+      <button id="play" onclick="playOrPauseSong()"><img src="./img/play-button.png" alt="play button"></button>
+      <button id="next" onclick="next()"><img src="./img/next-button.png" alt="next button"></button>
+    </div>
+    
+    <button id="favorite" onclick="favorite()"><img src="./img/favorite-button.png" alt="Favorite button"></button>
+
   </section>
   
+  <script src="./js/jquery-min.js"></script>
   <script src="./js/search.js"></script>
+  <script src="./js/player.js"></script>
 
 </body>
 
