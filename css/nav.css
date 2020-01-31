@@ -8,11 +8,11 @@
   display: flex;
   justify-content: space-between;
 }
-#nav .tabs .tab:first-child a {
+#nav .tabs .active-tab a {
   color: #ffffff;
   font-weight: bold;
 }
-#nav .tabs .tab a {
+.tabs .tab a {
   text-decoration: none;
   margin-right: 1em;
   color: #4e4e4e;
