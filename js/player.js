@@ -26,11 +26,11 @@ function playOrPauseSong(){
 
 function updateTime() {
   song.addEventListener('timeupdate', () => {
-    let minutes = 00
-    let seconds = 
+    let minutes = Math.floor(song.currentTime / 60)
+    let seconds = song.currentTime - minutes * 60
 
     currentMinutesTime.textContent = minutes
-    currentSecondsTime.textContent = song.currentTime.toFixed(0)
+    currentSecondsTime.textContent = Math.round(seconds)
   })
 }
 
